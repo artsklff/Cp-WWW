@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание для CloudPayments (jQuery)</title>
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Форма для CloudPayments -->
+<form id="form" action="/js/cp.js" method="post">
+
+    <!-- Имя дарителя -->
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <!-- Фамилия дарителя -->
+    <label for="lastName">Фамилия:</label>
+    <input type="text" id="lastName" name="lastName" required><br>
+
+    <!-- Отчество дарителя -->
+    <label for="middleName">Отчество:</label>
+    <input type="text" id="middleName" name="middleName" required><br>
+
+    <!-- Телефон дарителя -->
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" required pattern="^\+?\d{9,15}$"><br>
+
+    <!-- Email дарителя -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <!-- Комментарий клиента -->
+    <label for="comment">Комментарий:</label>
+    <textarea id="comment" name="comment"></textarea><br>
+
+    <!-- Кнопка отправки формы -->
+    <button type="submit">Пожертвовать</button>
+
+</form>
+
+</body>
+</html>
